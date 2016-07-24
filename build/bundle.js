@@ -21208,12 +21208,23 @@
 	  }
 
 	  _createClass(Header, [{
+	    key: 'getStyles',
+	    value: function getStyles() {
+	      return {
+	        big: {
+	          width: '100%',
+	          height: '300',
+	          backgroundColor: 'red'
+	        }
+	      };
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-
+	      var styles = this.getStyles();
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { style: styles.big },
 	        'header'
 	      );
 	    }
@@ -21258,12 +21269,23 @@
 	  }
 
 	  _createClass(Footer, [{
+	    key: 'getStyles',
+	    value: function getStyles() {
+	      return {
+	        big: {
+	          width: '100%',
+	          height: '300',
+	          backgroundColor: 'yellow'
+	        }
+	      };
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-
+	      var styles = this.getStyles();
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { style: styles.big },
 	        'Footer'
 	      );
 	    }
@@ -21308,12 +21330,23 @@
 	  }
 
 	  _createClass(List, [{
+	    key: 'getStyles',
+	    value: function getStyles() {
+	      return {
+	        big: {
+	          width: '100%',
+	          height: '300',
+	          backgroundColor: 'blue'
+	        }
+	      };
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-
+	      var styles = this.getStyles();
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { style: styles.big },
 	        'List'
 	      );
 	    }
