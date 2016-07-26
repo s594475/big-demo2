@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-
+import Cards from './Cards.js';
 class List extends Component {
   getStyles(){
     return{
       big:{
         width:'100%',
-        height:'300',
-        backgroundColor:'blue'
-        }
+        backgroundColor:'#fff',
+      }
       }
   }
   render(){
       const styles=this.getStyles();
     return (
       <div style={styles.big}>
-        List
+        <Cards style={styles.card}/>
       </div>
     );
   }
